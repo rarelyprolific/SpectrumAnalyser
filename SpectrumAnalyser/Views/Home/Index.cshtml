@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<br /><p>This is a basic MVC application with WebAPI.. I just need to spin up a Knockout ViewModel in TypeScript and get it working! :)</p>
+
+<br /><br />
+
+<div id="SpectrumAnalyser">
+    <div>Title: <span data-bind="text: SpectrumGame().Title"></span></div>
+    <div>Publisher: <span data-bind="text: SpectrumGame().Publisher"></span></div>
+    <div>Genre: <span data-bind="text: SpectrumGame().Genre"></span></div>
+    <div>ReleaseYear: <span data-bind="text: SpectrumGame().ReleaseYear"></span></div>
+</div>
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/node_modules/knockout/build/output/knockout-latest.js"></script>
+<script src="~/Scripts/ViewModels/SpectrumAnalyserViewModel.js"></script>
