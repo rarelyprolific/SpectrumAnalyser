@@ -14,8 +14,37 @@
     <div>ReleaseYear: <span data-bind="text: SpectrumGame().ReleaseYear"></span></div>
 </div>
 
+<div id="ArcadeMachine">
+    <div class="container">
+        <h1>Arcade machine simulation</h1>
+        <div class="col-md-8">
+            <div class="form-group">
+                <label class="control-label" for="GameNameTextbox">Game Name:</label>
+                <input type="text" class="form-control" data-bind="value: gameName" />
+            </div>
+
+            <div>
+                <p>The name of the game is <span data-bind="text: gameName"></span></p>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+            <h4>
+                Paid: £ <span id="total" data-bind="text: paid"></span>
+                <br/><br/>
+                <button class="btn btn-primary" onclick="machine.acceptCoin(new PoundCoin())">Insert coin</button>
+            </h4>
+        </div>
+    </div>
+</div>
+
+
 
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/bootstrap.min.js"></script>
 <script src="~/node_modules/knockout/build/output/knockout-latest.js"></script>
+<script src="~/Scripts/ViewModels/Coin.js"></script>
 <script src="~/Scripts/ViewModels/SpectrumAnalyserViewModel.js"></script>
+<script src="~/Scripts/ViewModels/ArcadeMachineViewModel.js"></script>
+<script src="~/Scripts/ViewModels/ArcadeMachineBootstrapper.js"></script>

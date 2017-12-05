@@ -151,6 +151,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\ViewModels\ArcadeMachineBootstrapper.ts" />
+    <TypeScriptCompile Include="Scripts\ViewModels\ArcadeMachineViewModel.ts" />
+    <TypeScriptCompile Include="Scripts\ViewModels\Coin.ts" />
     <TypeScriptCompile Include="Scripts\ViewModels\SpectrumAnalyserViewModel.ts" />
   </ItemGroup>
   <ItemGroup>
