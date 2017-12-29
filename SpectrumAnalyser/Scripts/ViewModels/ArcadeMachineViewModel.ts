@@ -3,8 +3,8 @@ import PoundCoin = Currency.PoundCoin;
 import TwentyPenceCoin = Currency.TwentyPenceCoin;
 
 class ArcadeMachine {
-    private paid = ko.observable(0);
-    public gameName = ko.observable('');
+    private paid: KnockoutObservable<number> = ko.observable(0);
+    public gameName: KnockoutObservable<string> = ko.observable('');
 
     acceptedCoins: Coin[] = [new PoundCoin(), new TwentyPenceCoin()]
 
