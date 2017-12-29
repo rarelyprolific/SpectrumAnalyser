@@ -2,7 +2,7 @@
     private paid = ko.observable(0);
     public gameName = ko.observable('');
 
-    acceptedCoins: PoundCoin[] = [new PoundCoin()]
+    acceptedCoins: Coin[] = [new PoundCoin(), new TwentyPenceCoin()]
 
     acceptCoin = (coin: PoundCoin): void => {
         let oldTotal = this.paid();

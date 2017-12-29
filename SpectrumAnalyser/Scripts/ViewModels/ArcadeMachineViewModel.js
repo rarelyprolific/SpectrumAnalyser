@@ -3,7 +3,7 @@ var ArcadeMachine = /** @class */ (function () {
         var _this = this;
         this.paid = ko.observable(0);
         this.gameName = ko.observable('');
-        this.acceptedCoins = [new PoundCoin()];
+        this.acceptedCoins = [new PoundCoin(), new TwentyPenceCoin()];
         this.acceptCoin = function (coin) {
             var oldTotal = _this.paid();
             _this.paid(oldTotal + coin.Value);

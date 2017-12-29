@@ -1,6 +1,6 @@
 var PoundCoin = /** @class */ (function () {
     function PoundCoin() {
-        this.value = .25;
+        this.value = 1;
     }
     Object.defineProperty(PoundCoin.prototype, "Value", {
         get: function () {
@@ -16,5 +16,21 @@ var PoundCoin = /** @class */ (function () {
         return "img/PoundCoin.png";
     };
     return PoundCoin;
+}());
+var TwentyPenceCoin = /** @class */ (function () {
+    function TwentyPenceCoin() {
+        this.value = 0.25;
+    }
+    Object.defineProperty(TwentyPenceCoin.prototype, "Value", {
+        get: function () {
+            return this.value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    TwentyPenceCoin.prototype.getImageUrl = function () {
+        return "img/TwentyPence.png";
+    };
+    return TwentyPenceCoin;
 }());
 //# sourceMappingURL=Coin.js.map
