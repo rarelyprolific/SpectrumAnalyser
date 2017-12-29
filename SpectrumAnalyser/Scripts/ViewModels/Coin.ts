@@ -1,33 +1,35 @@
-﻿interface Coin {
-    getImageUrl(): string;
+﻿namespace Currency {
+    export interface Coin {
+        getImageUrl(): string;
 
-    Value: number;
-}
-
-class PoundCoin implements Coin {
-    private value: number = 1;
-
-    get Value(): number {
-        return this.value;
+        Value: number;
     }
 
-    set Value(newValue: number) {
-        this.value = newValue;
+    export class PoundCoin implements Coin {
+        private value: number = 1;
+
+        get Value(): number {
+            return this.value;
+        }
+
+        set Value(newValue: number) {
+            this.value = newValue;
+        }
+
+        getImageUrl(): string {
+            return "img/PoundCoin.png";
+        }
     }
 
-    getImageUrl(): string {
-        return "img/PoundCoin.png";
-    }
-}
+    export class TwentyPenceCoin implements Coin {
+        private value: number = 0.25;
 
-class TwentyPenceCoin implements Coin {
-    private value: number = 0.25;
+        get Value(): number {
+            return this.value;
+        }
 
-    get Value(): number {
-        return this.value;
-    }
-
-    getImageUrl(): string {
-        return "img/TwentyPence.png";
+        getImageUrl(): string {
+            return "img/TwentyPence.png";
+        }
     }
 }

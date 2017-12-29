@@ -1,3 +1,5 @@
+var PoundCoin = Currency.PoundCoin;
+var TwentyPenceCoin = Currency.TwentyPenceCoin;
 var ArcadeMachine = /** @class */ (function () {
     function ArcadeMachine() {
         var _this = this;
